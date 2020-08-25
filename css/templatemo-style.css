@@ -150,6 +150,7 @@ video {
   right:0;
   bottom: 0;
 }
+
 .wrapper-background-dark:after {
   background: #222;
   opacity:0.95;

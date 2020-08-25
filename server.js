@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('*', (req, res) => {
-  res.status(404).send('404: Whoops, Not Found');
+  res.status(404).send('404: Whoops, Content Not Found');
 });
 
 // global error handeler
