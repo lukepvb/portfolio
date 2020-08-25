@@ -70,9 +70,9 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fff;
   outline: none;
-  text-decoration: underline;
+  text-decoration: underline rgb(252, 72, 252);
+  
 }
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
   a:active {
@@ -309,10 +309,34 @@ video {
 }
 a#logo {
   text-decoration: none;
-  font-size: 32px;
+  font-size: 36px;
   text-transform: uppercase;
   font-weight: 700;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-in-out;
 }
+
+a#logo:hover {
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  color: violet;
+  transform: scale(1.1); 
+}
+
+div#surf-div:hover {
+  color: violet;
+ 
+  
+}
+
+span.purple-period {
+  color: violet;
+}
+
 .navbar {
   padding: 0;
 }
