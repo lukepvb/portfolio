@@ -2,4 +2,13 @@
 
 My digital portfolio for Software Engineering 
 
-- Luke Van Bergen
+
+Thanks for stopping by!
+
+- Luke
+
+"People keep asking if I'm back, and I haven't really had an answer...
+        But now, yeah, I'M THINKIN I'M BACK!"
+
+        -- John Wick
+
