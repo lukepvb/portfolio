@@ -70,9 +70,9 @@ a {
 }
 a:hover,
 a:focus {
+  color: #fff;
   outline: none;
-  text-decoration: underline rgb(252, 72, 252);
-  
+  text-decoration: underline;
 }
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
   a:active {
@@ -150,7 +150,6 @@ video {
   right:0;
   bottom: 0;
 }
-
 .wrapper-background-dark:after {
   background: #222;
   opacity:0.95;
@@ -309,34 +308,14 @@ video {
 }
 a#logo {
   text-decoration: none;
-  font-size: 36px;
+  font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
-  -moz-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-in-out;
-}
-
-a#logo:hover {
-  -moz-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
-  color: violet;
-  transform: scale(1.1); 
-}
-
-div#surf-div:hover {
-  color: violet;
- 
+  border: solid 3px ;
+  padding: 1px 8px 1px 8px;
+  border-radius: 5px;
   
 }
-
-span.purple-period {
-  color: violet;
-}
-
 .navbar {
   padding: 0;
 }
@@ -490,7 +469,7 @@ span.purple-period {
 .about-contentbox {
   margin-top: 80px;
   text-align:left;
-  line-height:1.8;
+  line-height:1.2;
 }
 .about-contentbox span {
   font-size: 24px;
@@ -502,6 +481,11 @@ span.purple-period {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.about-summary {
+  justify-content: center;
+}
+
 .facts-list {
   margin-top: 30px;
 }
@@ -512,7 +496,7 @@ span.purple-period {
   width: 100%;
   display: inline-block;
   text-transform:capitalize;
-  font-size:14px;
+  font-size:12px;
   padding: 30px 0px;
   background: rgba(0,0,0,0.25);
 }
@@ -538,6 +522,10 @@ span.purple-period {
   font-weight:700;
   line-height:1;
   margin-bottom:10px;
+}
+
+#about-div.section-inner {
+  margin-top: -3%;
 }
 
 /*==============================================
@@ -821,8 +809,9 @@ textarea.form-control {
 /*==============================================
 10. SKILLS BLOCK CSS
 ================================================*/
+
 .skills-row {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .skill-item {
   border-bottom: 1px solid rgba(250,250,250,0.1);
@@ -854,28 +843,72 @@ textarea.form-control {
   font-weight: 700;
   color: #fff;
   text-align: right;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 .skill-bar {
-  width: 70%;
+  width: 90%;
   height: 6px;
   border-radius: 3px;
   background-color: rgba(250,250,250,0.25);
   position: relative;
+  margin-bottom: 5%;
 }
-.filled-bar {
+.filled-bar-javascript {
   position: absolute;
   z-index: 99;
-  width: 64%;
+  width: 78%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+ 
 }
-.filled-bar-2 {
+.filled-bar-html-css {
   position: absolute;
   z-index: 99;
-  width: 82%;
+  width: 85%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+  
+}
+
+.filled-bar-react {
+  position: absolute;
+  z-index: 99;
+  width: 72%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+.filled-bar-node {
+  position: absolute;
+  z-index: 99;
+  width: 70%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+
+.filled-bar-nosql {
+  position: absolute;
+  z-index: 99;
+  width: 75%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+.filled-bar-sql {
+  position: absolute;
+  z-index: 99;
+  width: 65%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
 }
