@@ -155,7 +155,7 @@
         if ($('.fullpage-default').length) {
             var myFullpage = new fullpage('.fullpage-default', {
                 licenseKey: ' C7F41B00-5E824594-9A5EFB99-B556A3D5',
-                anchors: ['home', 'about', 'services', 'skills', 'portfolio', 'testimonials', 'contact'],
+                anchors: ['home', 'about', 'skills', 'tech-stack', 'my-work', 'testimonials', 'contact'],
                 menu: '#nav',
                 lazyLoad: true,
                 navigation: true,
