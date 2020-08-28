@@ -311,6 +311,10 @@ a#logo {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
+  border: solid 3px ;
+  padding: 1px 8px 1px 8px;
+  border-radius: 5px;
+  
 }
 .navbar {
   padding: 0;
@@ -465,7 +469,7 @@ a#logo {
 .about-contentbox {
   margin-top: 80px;
   text-align:left;
-  line-height:1.8;
+  line-height:1.2;
 }
 .about-contentbox span {
   font-size: 24px;
@@ -477,6 +481,11 @@ a#logo {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.about-summary {
+  justify-content: center;
+}
+
 .facts-list {
   margin-top: 30px;
 }
@@ -487,7 +496,7 @@ a#logo {
   width: 100%;
   display: inline-block;
   text-transform:capitalize;
-  font-size:14px;
+  font-size:12px;
   padding: 30px 0px;
   background: rgba(0,0,0,0.25);
 }
@@ -514,6 +523,10 @@ a#logo {
   line-height:1;
   margin-bottom:10px;
 }
+
+/* #about-div.section-inner {
+  margin-top: -1%;
+} */
 
 /*==============================================
 06. SERVICES BLOCK CSS
@@ -603,19 +616,28 @@ a#logo {
   z-index: 99;
   bottom: 0;
   text-align: left;
-  padding: 20px;
+  padding: 4%;
+  margin-bottom: 0;
+  border-radius: 10px;
   background-color: rgba(250,250,250,0.25);
   width: 100%;
-  height: 60px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  height: 14.8%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
+
 .portfolio-item .thumb-inner h4 {
   margin-bottom: 0;
   font-size: 16px;
   margin-top: 0px;
+}
+
+
+
+.portfolio-item .thumb-inner hr {
+ visibility: hidden;
 }
 .portfolio-item .thumb-inner p {
   opacity: 0;
@@ -623,22 +645,54 @@ a#logo {
   position: absolute;
   margin-bottom: 0px;
 }
+.portfolio-item .thumb-inner h6 {
+ visibility: hidden;
+}
 .portfolio-item:hover .thumb-inner p {
   position: relative;
+  font-size: 16px;
   opacity: 1;
   visibility: visible;
   color: #4a4a4a;
 }
 .portfolio-item:hover .thumb-inner {
-  border-radius: 10px;
   height: 100%;
+  border-radius: 10px;
   background-color: rgba(250,250,250,0.9)
 }
 .portfolio-item:hover .thumb-inner h4 {
-   margin-top: 30%;
+   margin-top: 6%;
   color: #1e1e1e;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
+.portfolio-item:hover .thumb-inner li {
+ 
+ color: #1e1e1e;
+
+ 
+}
+.portfolio-item:hover .thumb-inner a {
+ 
+  color: #1e1e1e;
+ 
+  
+ }
+
+ 
+ .portfolio-item:hover .thumb-inner h6 {
+  visibility: visible;
+  font-size: smaller;
+  color: #1e1e1e;
+ 
+  
+ }
+
+ .portfolio-item:hover .thumb-inner hr {
+  visibility: visible;
+ }
+
+ 
 
 /*==============================================
 08. CONTACT BLOCK CSS
@@ -659,75 +713,7 @@ a#logo {
   color:#fff !important;
   opacity:1;
 }
-.input-field {
-  margin-bottom:15px;
-}
-.form-control {
-  height: 50px;
-  color:#fff;
-  border: none;
-  background:rgba(250,250,250,0.05);
-  border: 1px solid rgba(250,250,250,0.5);
-  border-radius: 10px;
-  padding:4px 22px;
-  font-size:14px;
-  margin-bottom: 30px;
-}
-.form-control:focus {
-  box-shadow:none;
-  outline:none;
-  background:rgba(0,0,0,0.05);
-  border: 1px solid rgba(250,250,250,1);
-  color:#fff;
-}
-.index .form-control.form-control-dark {
-  background: rgba(250,250,250, 0.75);
-  color: #fff;
-}
-.index .form-control.form-control-dark:focus {
-  background: rgba(54, 40, 158, 0.85);
-  color: #fff;
-}
-.index .form-control.form-control-dark::-webkit-input-placeholder {
-  color: #fff !important;
-}
-.index .form-control.form-control-dark::-moz-placeholder {
-  color:#fff !important;
-}
-.index .form-control.form-control-dark:-ms-input-placeholder {
-  color:#fff !important;
-}
-.index .form-control.form-control-dark:-moz-placeholder {
-  color:#fff !important;
-}
-.form-control.form-control-dark:focus {
-  background: rgba(0, 0, 0, 0.2);
-}
-.form-control.form-control-dark {
-  background: rgba(0, 0, 0, 0.1);
-  color: #222;
-  border: none;
-}
-.form-control.form-control-dark::-webkit-input-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-.form-control.form-control-dark::-moz-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-.form-control.form-control-dark:-ms-input-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-.form-control.form-control-dark:-moz-placeholder {
-  color:#222 !important;
-  opacity:0.7;
-}
-textarea.form-control {
-  height:123px;
-  padding-top:15px;
-}
+
 .contact-section .btn {
   width:100%;
 }
@@ -783,7 +769,7 @@ textarea.form-control {
   margin: 0 auto;
 }
 .testimonials-section .item h4 {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 22px;
   text-transform: capitalize;
   font-weight: 700;
@@ -796,13 +782,14 @@ textarea.form-control {
 /*==============================================
 10. SKILLS BLOCK CSS
 ================================================*/
+
 .skills-row {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .skill-item {
   border-bottom: 1px solid rgba(250,250,250,0.1);
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 .last-skill {
   border-bottom: none;
@@ -828,29 +815,73 @@ textarea.form-control {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  text-align: right;
-  margin-bottom: -10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .skill-bar {
-  width: 70%;
+  width: 90%;
   height: 6px;
   border-radius: 3px;
   background-color: rgba(250,250,250,0.25);
   position: relative;
+  margin-bottom: 3%;
 }
-.filled-bar {
+.filled-bar-javascript {
   position: absolute;
   z-index: 99;
-  width: 64%;
+  width: 78%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+ 
 }
-.filled-bar-2 {
+.filled-bar-html-css {
   position: absolute;
   z-index: 99;
-  width: 82%;
+  width: 85%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+  
+}
+
+.filled-bar-react {
+  position: absolute;
+  z-index: 99;
+  width: 72%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+.filled-bar-node {
+  position: absolute;
+  z-index: 99;
+  width: 70%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+
+.filled-bar-nosql {
+  position: absolute;
+  z-index: 99;
+  width: 75%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+.filled-bar-sql {
+  position: absolute;
+  z-index: 99;
+  width: 65%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+ 
 }

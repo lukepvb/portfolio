@@ -420,6 +420,14 @@
 	.testimonial-content:before {
 		left: 45%;
 	}
+
+	.portfolio-item .thumb-inner h4 {
+		font-size: 14px;
+	}
+
+	.portfolio-item:hover .thumb-inner p {
+		font-size: 14px;
+	}
 }
 @media only screen and (max-width: 320px) {
 	.gallery-overlay p {

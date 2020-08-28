@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Web-based portfolio for Luke Van Bergen">
+    <meta name="author" content="Luke Van Bergen">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Elegance - Creative HTML5 Template</title>
-<!--
-Elegance Template
-https://templatemo.com/tm-528-elegance
--->
-    <!-- Additional CSS Files -->
+    <title>L V B</title>
+
+    <!-- CSS Files -->
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -27,12 +25,15 @@ https://templatemo.com/tm-528-elegance
 
     <link rel="stylesheet" href="css/templatemo-style.css">
 
+
     <link rel="stylesheet" href="css/responsive.css">
 
-    </head>
-    
-    <body>
-    
+    <link rel="icon" type="image/png" href="images/icons8-surfboard-48.png" />
+
+</head>
+
+<body>
+
     <div id="video">
         <div class="preloader">
             <div class="preloader-bounce">
@@ -45,21 +46,22 @@ https://templatemo.com/tm-528-elegance
         <header id="header">
             <div class="container-fluid">
                 <div class="navbar">
-                    <a href="#" id="logo" title="Elegance by TemplateMo">
-                        Elegance
+                    <a href="#home" id="logo" title="Luke Van Bergen">
+                        L V B
                     </a>
                     <div class="navigation-row">
                         <nav id="navigation">
                             <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
                             <div class="nav-box navbar-collapse">
                                 <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
-                                    <li data-menuanchor="slide02"><a href="#slide02">About Me</a></li>
-                                    <li data-menuanchor="slide03"><a href="#slide03">Services</a></li>
-                                    <li data-menuanchor="slide04"><a href="#slide04">My Skills</a></li>
-                                    <li data-menuanchor="slide05"><a href="#slide05">My Work</a></li>
-                                    <li data-menuanchor="slide06"><a href="#slide06">Testimonials</a></li>
-                                    <li data-menuanchor="slide07"><a href="#slide07">Contact Me</a></li>
+                                    <li data-menuanchor="home" class="active"><a href="#home"><strong>Home</strong></a>
+                                    </li>
+                                    <li data-menuanchor="about"><a href="#about">About</a></li>
+                                    <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+                                    <li data-menuanchor="tech-stack"><a href="#tech-stack">Tech Stack</a></li>
+                                    <li data-menuanchor="my-work"><a href="#my-work">My Work</a></li>
+                                    <li data-menuanchor="testimonials"><a href="#testimonials">Testimonials</a></li>
+                                    <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -69,7 +71,7 @@ https://templatemo.com/tm-528-elegance
         </header>
 
         <video autoplay muted loop id="myVideo">
-          <source src="images/video-bg.mp4" type="video/mp4">
+            <source src="images/sailboat.mp4" type="video/mp4">
         </video>
 
         <div id="fullpage" class="fullpage-default">
@@ -77,16 +79,25 @@ https://templatemo.com/tm-528-elegance
             <div class="section animated-row" data-section="slide01">
                 <div class="section-inner">
                     <div class="welcome-box">
-                        <span class="welcome-first animate" data-animate="fadeInUp">Hello, welcome to</span>
-                        <h1 class="welcome-title animate" data-animate="fadeInUp">elegance</h1>
-                        <p class="animate" data-animate="fadeInUp">This is a clean and modern HTML5 template with a video background. You can use this layout for your profile page. Please spread a word about templatemo to your friends. Thank you.</p>
-                        <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                        <span class="welcome-first animate" data-animate="fadeInUp">Hi, my name is</span>
+                        <h1 class="welcome-title animate" data-animate="fadeInUp">Luke Van Bergen.</h1>
+                        <p class="animate" data-animate="fadeInUp">I am a software engineer and creative based in Santa
+                            Monica,
+                            California &mdash; I value simplicity and am drawn to intuitive and responsive UI/UX.</p>
+                        <div id="surf-div" class="scroll-down next-section animate data-animate=" fadeInUp="true">
+                            <img id="surf-icon" style="max-width: 12%; width:auto; height: auto; max-height:fit-content"
+                                src="images/surfboard.png" alt="surf-icon"><span><strong>
+                                    <p>Continue
+                                        Surfing
+                                        Below</p>
+                                </strong></span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="section animated-row" data-section="slide02">
-                <div class="section-inner">
+                <div id="about-div" class="section-inner">
                     <div class="about-section">
                         <div class="row justify-content-center">
                             <div class="col-lg-8 wide-col-laptop">
@@ -94,41 +105,69 @@ https://templatemo.com/tm-528-elegance
                                     <div class="col-md-6">
                                         <div class="about-contentbox">
                                             <div class="animate" data-animate="fadeInUp">
-                                                <span>About Me</span>
-                                                <h2>Who am i?</h2>
-                                                <p>Credits go to <strong>Unsplash</strong> and <strong>Pexels</strong> for photos and video used in this template. Vivamus tincidunt, augue rutrum convallis volutpat, massa lacus tempus leo.</p>
-                                            </div>
-                                            <div class="facts-list owl-carousel">
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">32</span> Awards Won
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">4</span> Degrees
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">12</span> Working Years
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        <i class="fa fa-support counter-icon" aria-hidden="true"></i><span class="count-number">6</span> Team Members
-                                                    </div>
-                                                </div>
-                                                <div class="item animate" data-animate="fadeInUp">
-                                                    <div class="counter-box">
-                                                        <i class="fa fa-certificate counter-icon" aria-hidden="true"></i><span class="count-number">10</span> Certificates
+                                                <span>
+                                                    About
+                                                </span>
+                                                <h3>background</h3>
+                                                <p>Born and raised in <strong>Virginia</strong>, I have resided in sunny
+                                                    Southern California since July 2016.
+                                                    I hold a <strong>bachelor's </strong>
+                                                    degree from the <strong>University of
+                                                        Virginia</strong>, where I graduated in the year 2015.
+                                                    <br> <br>
+                                                    Outside of software development, I have a keen interest in
+                                                    <strong>health and fitness</strong> (former ACSM cPT),
+                                                    storytelling through <strong>film and television</strong> (active
+                                                    member of SAG-AFTRA), and the intersection of
+                                                    <strong>technology and sustainability</strong>.
+                                                    <br> <br>
+                                                    In my free time, you may find me <strong>surfing</strong> north of
+                                                    Malibu, <strong>weight-training</strong> outside in the sun,
+                                                    zipping around to the next <strong>coffee</strong> shop, or playing
+                                                    <strong>beach volleyball</strong>.
+
+                                                </p>
+                                                <div class="about-summary">
+                                                    <div class="facts-list owl-carousel">
+                                                        <div class="item animate" data-animate="fadeInUp">
+                                                            <div class="counter-box">
+                                                                <i class="fa fa-home counter-icon"
+                                                                    aria-hidden="true"></i>
+                                                                <h6>From<br> Virginia</h6>
+                                                                est. 1993
+                                                            </div>
+                                                        </div>
+                                                        <div class="item animate" data-animate="fadeInUp">
+                                                            <div class="counter-box">
+                                                                <i class="fa fa-graduation-cap counter-icon"
+                                                                    aria-hidden="true"></i>
+                                                                <h6>University
+                                                                    of Virginia</h6>
+
+                                                                Bachelor of <br>Arts and Science
+                                                            </div>
+                                                        </div>
+                                                        <div class="item animate" data-animate="fadeInUp">
+                                                            <div class="counter-box">
+                                                                <i class="fa fa-code counter-icon"
+                                                                    aria-hidden="true"></i>
+                                                                <h6>3-4 Years</h6>
+
+                                                                Practical
+                                                                Experience
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="images/profile-girl.jpg" class="rounded" alt=""></figure>
+                                        <figure class="about-img animate" data-animate="fadeInUp"><img
+                                                style="max-width: 64%; margin-top: 18%; width:auto; height: auto; border: solid white 5px "
+                                                src="images/LukeGreen.JPG" class="rounded" alt="luke-photo">
+                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -142,65 +181,68 @@ https://templatemo.com/tm-528-elegance
                     <div class="row justify-content-center">
                         <div class="col-md-8 wide-col-laptop">
                             <div class="title-block animate" data-animate="fadeInUp">
-                                <span>Services</span>
-                                <h2>What I Do?</h2>
+                                <span>Skills</span>
+                                <h2>What I offer</h2>
                             </div>
                             <div class="services-section">
                                 <div class="services-list owl-carousel">
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
-                                            <h3>Bootstrap Themes</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                            <span class="service-icon"><i class="fa fa-desktop fa-lg"
+                                                    aria-hidden="true"></i></span>
+                                            <h3>Web</h3>
+                                            <p>Build full stack applications using JavaScript,
+                                                HTML5/CSS, and
+                                                modern UI libraries, like React
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
-                                            <h3>HTML5 Coding</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                            <span class="service-icon"><i class="fa fa-mobile fa-2x"
+                                                    aria-hidden="true"></i></i></span>
+                                            <h3>Mobile</h3>
+                                            <p>Working knowledge of modern mobile development libraries like React
+                                                Native
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
-                                            <h3>Fully Responsive</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                            <span class="service-icon"><i class="fa fa-cloud fa-lg"
+                                                    aria-hidden="true"></i></i></span>
+                                            <h3>Cloud</h3>
+                                            <p>Experience working with Amazon Web Servives (AWS) and Google Cloud
+                                                Platform (GCP)
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-                                            <h3>Mobile Ready</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                            <span class="service-icon"><i class="fa fa-code fa-2x"
+                                                    aria-hidden="true"></i></span>
+                                            <h3>Creative Problem Solving</h3>
+                                            <p>Use artistic background to approach problems from a unique perspective
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
-                                            <h3>Fast Support</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                            <span class="service-icon"><i class="fa fa-user fa-2x"
+                                                    aria-hidden="true"></i></span>
+                                            <h3>Leadership</h3>
+                                            <p>Experience operating as Scrum Master, adhering to agile methodology
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
-                                            <h3>24-hour Up Time</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
-                                            <h3>Instant Upgrades</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="service-box">
-                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-                                            <h3>Always Monitoring</h3>
-                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                            <span class="service-icon"><i class="fa fa-users fa-2x"
+                                                    aria-hidden="true"></i></span>
+                                            <h3>Team Player</h3>
+                                            <p>Put emphasis on communication - establish regular check-ins with
+                                                teammates
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -210,45 +252,43 @@ https://templatemo.com/tm-528-elegance
                 </div>
             </div>
 
+
             <div class="section animated-row" data-section="slide04">
                 <div class="section-inner">
                     <div class="row justify-content-center">
                         <div class="col-md-7 wide-col-laptop">
                             <div class="title-block animate" data-animate="fadeInUp">
-                                <span>My Skills</span>
-                                <h2>What i’m good?</h2>
+                                <span>Tech Stack</span>
+                                <h2>What I've Used</h2>
                             </div>
                             <div class="skills-row animate" data-animate="fadeInDown">
                                 <div class="row">
-                                    <div class="col-md-8 offset-md-2">   
+                                    <div class="col-md-8 offset-md-2">
+
                                         <div class="skill-item">
-                                            <h6>HTML CSS</h6>
-                                            <div class="skill-bar">
-                                                <span>70%</span>
-                                                <div class="filled-bar"></div>
-                                            </div>          
+                                            <h5>FrontEnd</h5>
+                                            <p><strong>-</strong> JavaScript</p>
+                                            <p><strong>-</strong> HTML5/CSS</p>
+                                            <p><strong>-</strong> React/React Native</p>
+                                            <p><strong>-</strong> Redux</p>
                                         </div>
                                         <div class="skill-item">
-                                            <h6>PSD Design</h6>
-                                            <div class="skill-bar">
-                                                <span>90%</span>
-                                                <div class="filled-bar-2"></div>
-                                            </div>          
+                                            <h5>Backend</h5>
+                                            <p><strong>-</strong> Node.js/Express</p>
+                                            <p><strong>-</strong> NoSQL/SQL</p>
+
+
                                         </div>
                                         <div class="skill-item">
-                                            <h6>Social Media</h6>
-                                            <div class="skill-bar">
-                                                <span>70%</span>
-                                                <div class="filled-bar"></div>
-                                            </div>          
+                                            <h5>Misc</h5>
+                                            <p><strong>-</strong> Bootstrap/Material UI</p>
+                                            <p><strong>-</strong> Webpack</p>
+                                            <p><strong>-</strong> Docker</p>
+                                            <p><strong>-</strong> Kubernetes</p>
+                                            <p><strong>-</strong> Postman</p>
+                                            <p><strong>-</strong> Jest/Enzyme</p>
+                                            <p><strong>-</strong> Git/Github</p>
                                         </div>
-                                        <div class="skill-item last-skill">
-                                            <h6>Leadership</h6>
-                                            <div class="skill-bar">
-                                                <span>90%</span>
-                                                <div class="filled-bar-2"></div>
-                                            </div>          
-                                        </div>                   
                                     </div>
                                 </div>
                             </div>
@@ -256,6 +296,20 @@ https://templatemo.com/tm-528-elegance
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="section animated-row" data-section="slide06">
                 <div class="section-inner">
@@ -263,109 +317,95 @@ https://templatemo.com/tm-528-elegance
                         <div class="col-md-8 wide-col-laptop">
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <span>My Work</span>
-                                <h2>what i’ve done?</h2>
+                                <h2>What i've done</h2>
                             </div>
                             <div class="gallery-section">
                                 <div class="gallery-list owl-carousel">
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
-                                                <img src="images/item-1.jpg" alt="">
+                                                <img src="images/shipm8_logo.png" alt="shipm8-logo">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap CSS templates.</p>
+                                                <h4>ShipM8</h4>
+
+                                                <p>Mobile monitoring for Kubernetes clusters hosted on Amazon Web
+                                                    Services (AWS) and Google Cloud Platform (GCP)</p>
+
+                                                <hr>
+                                                <em>
+                                                    <p>React Native, Redux/Redux-Thunk, AWS, GCP,
+                                                        Kubernetes, Docker, and Jest </p>
+                                                </em>
+                                                <hr>
+                                                <h6>Learn More</h6>
+                                                <li>
+                                                    <a href="http://shipm8.io" target="_blank">Shipm8.io</a>
+                                                </li>
+                                                <li>
+                                                    <a href="images/ShipM8 - Mobile .pdf" download>Download PDF</a>
+                                                </li>
+
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
-                                                <img src="images/item-2.jpg" alt="">
+                                                <img src="images/App-track-logo2.png" style="height: 110%;"
+                                                    alt="app-track-logo">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap themes.</p>
+                                                <h4 class='app-track'>AppTrack</h4>
+                                                <p>A Productivity tool for managing the application process
+                                                </p>
+                                                <hr>
+                                                <em>
+                                                    <p>React, Javascript, HTML5/CSS, NoSQL (MongoDB w/ Mongoose), and
+                                                        Node.js/Express</p>
+                                                </em>
+                                                <hr>
+                                                <h6>Learn More</h6>
+                                                <li>
+                                                    <a href="https://github.com/lukepvb/applicationtracker"
+                                                        target="_blank">Github
+                                                    </a>
+                                                </li>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
-                                                <img src="images/item-3.jpg" alt="">
+                                                <img src="images/franks-cheeses.png" alt="franks-cheeses"
+                                                    style="background-color: black">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap layouts.</p>
+                                                <h4>Frank's Fine Cheeses</h4>
+                                                <p>A mobile-friendly, ecommerce web-app for finding cheeses and
+                                                    discounts available by zipcode </p>
+                                                <hr>
+                                                <em>
+                                                    <p>React, JavaScript, HTML5/CSS, SQL
+                                                        (ElephantSQL w/ PostgreSQL), and Node.js/Express</p>
+                                                </em>
+
+                                                <hr>
+                                                <h6>Learn More</h6>
+                                                <li>
+                                                    <a href="https://github.com/lukepvb/CodeTest" target="_blank">Github
+                                                    </a>
+                                                </li>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/item-1.jpg" alt="">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/item-2.jpg" alt="">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download Bootstrap CSS templates.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/item-3.jpg" alt="">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/item-1.jpg" alt="">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/item-2.jpg" alt="">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="images/item-3.jpg" alt="">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>templatemo is the best</h4>
-                                                <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -379,7 +419,7 @@ https://templatemo.com/tm-528-elegance
                         <div class="col-md-8 wide-col-laptop">
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <span>TESTIMONIALS</span>
-                                <h2>what THEY SAY?</h2>
+                                <h2>what THEY SAY</h2>
                             </div>
                             <div class="col-md-8 offset-md-2">
                                 <div class="testimonials-section">
@@ -387,37 +427,24 @@ https://templatemo.com/tm-528-elegance
                                         <div class="item animate" data-animate="fadeInUp">
                                             <div class="testimonial-item">
                                                 <div class="client-row">
-                                                    <img src="images/profile-01.jpg" class="rounded-circle" alt="profile 1">
+                                                    <img src="images/taylor-img.png" class="rounded-circle"
+                                                        alt="taylor-testimonial">
                                                 </div>
                                                 <div class="testimonial-content">
-                                                    <h4>Sandar</h4>
-                                                    <p>"Ut varius leo eu mauris lacinia, eleifend posuere urna gravida. Aenean a mattis lacus."</p>
-                                                    <span>Managing Director</span>
-                                                </div>                                           
-                                            </div>
-                                        </div>
-                                        <div class="item animate" data-animate="fadeInUp">
-                                            <div class="testimonial-item">
-                                                <div class="client-row">
-                                                    <img src="images/profile-01.jpg" class="rounded-circle" alt="profile 2">
+                                                    <a href="https://linkedin.com/in/taylorrodrigues/" target="_blank"
+                                                        title="Linkedin">
+                                                        <h4>Taylor Rodrigues
+                                                        </h4>
+                                                    </a>
+                                                    <p>"I had the pleasure of working with Luke while developing ShipM8.
+                                                        Luke is a highly skilled engineer with a great eye for detail.
+                                                        His ability to handle tough technical challenges proved
+                                                        invaluable throughout the development process. He would be an
+                                                        asset to any team, and I hope to work with him more in the
+                                                        future."</p>
+                                                    <span><strong>Software Engineer</strong> <br>- <em>Amazon Web
+                                                            Services (AWS)</em></span>
                                                 </div>
-                                                <div class="testimonial-content">
-                                                    <h4>Shinn</h4>
-                                                    <p>"Nam iaculis, leo nec facilisis sollicitudin, dui massa tempus odio, vitae malesuada ante elit vitae eros."</p>
-                                                    <span>CEO and Founder</span>
-                                                </div>                                           
-                                            </div>
-                                        </div>
-                                        <div class="item animate" data-animate="fadeInUp">
-                                            <div class="testimonial-item">
-                                                <div class="client-row">
-                                                    <img src="images/profile-01.jpg" class="rounded-circle" alt="profile 3">
-                                                </div>
-                                                <div class="testimonial-content">
-                                                    <h4>Marlar</h4>
-                                                    <p>"Etiam efficitur, tortor facilisis finibus semper, diam magna fringilla lectus, et fringilla felis urna posuere tortor."</p>
-                                                    <span>Chief Marketing Officer</span>
-                                                </div>                                           
                                             </div>
                                         </div>
                                     </div>
@@ -432,40 +459,42 @@ https://templatemo.com/tm-528-elegance
                 <div class="section-inner">
                     <div class="row justify-content-center">
                         <div class="col-md-7 wide-col-laptop">
+                            <br>
                             <div class="title-block animate" data-animate="fadeInUp">
                                 <span>Contact</span>
-                                <h2>Get In Touch!</h2>
+                                <h2>Get In Touch</h2>
+
                             </div>
+                            <br>
                             <div class="contact-section">
-                                <div class="row">
+                                <div class="row justify-content-center">
                                     <div class="col-md-6 animate" data-animate="fadeInUp">
                                         <div class="contact-box">
-                                            <div class="contact-row">
-                                                <i class="fa fa-map-marker"></i> 123 New Street Here, Wonderful City 10220
+                                            <div class="contact-row justify-content-center">
+                                                <i class="fa fa-map-marker"></i> Santa Monica, CA, 90404
                                             </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-phone"></i> 090 080 0210
-                                            </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-envelope"></i> info@company.co
-                                            </div>
+
+                                            <a href="mailto: info.lukepvb@gmail.com" style="text-decoration:none">
+                                                <div class="contact-row justify-content-center">
+                                                    <i class="fa fa-envelope"></i> info.lukepvb@gmail.com
+                                                </div>
+                                            </a>
+
+                                            <a href="images/Luke_Van_Bergen_Resume (5).pdf" download
+                                                style="text-decoration:none">
+                                                <div class="contact-row justify-content-center">
+                                                    <i class="fa fa-download"></i> Download Resume
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+                                        <br><br>
+                                        <div class="row justify-content-center">
+                                            <p>&copy; 2020 </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <form id="ajax-contact" method="post" action="#">
-                                            <div class="input-field">
-                                                <input type="text" class="form-control" name="name" id="name" required placeholder="Name">
-                                            </div>
-                                            <div class="input-field">
-                                                <input type="email" class="form-control" name="email" id="email" required placeholder="Email">
-                                            </div>
-                                            <div class="input-field">
-                                                <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
-                                            </div>
-                                            <button class="btn" type="submit">Submit</button>
-                                        </form>
-                                        <div id="form-messages" class="mt-3"></div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -477,14 +506,19 @@ https://templatemo.com/tm-528-elegance
         <div id="social-icons">
             <div class="text-right">
                 <ul class="social-icons">
-                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="http://linkedin.com/in/lukepvb" target="_blank" title="Linkedin"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                    </li>
+                    <li><a href="http://github.com/lukepvb" target="_blank" title="Github"><i
+                                class="fa fa-github fa-lg"></i></a></li>
+                    <li><a href="https://medium.com/@lukepvb" target="_blank" title="medium"><i
+                                class="fa fa-medium fa-lg"></i></a></li>
+                    <li><a href="https://www.instagram.com/luke_van_bergen/" target="_blank" title="instagram"><i
+                                class="fa fa-instagram fa-lg"></i></a></li>
                 </ul>
             </div>
         </div>
-    </div>  
+    </div>
 
     <script src="js/jquery.js"></script>
 
@@ -498,10 +532,9 @@ https://templatemo.com/tm-528-elegance
 
     <script src="js/jquery.inview.min.js"></script>
 
-    <script src="js/form.js"></script>
-
     <script src="js/custom.js"></script>
 
 
-  </body>
+</body>
+
 </html>
